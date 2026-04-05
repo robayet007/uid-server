@@ -19,7 +19,7 @@ app.get("/api/player", async (req, res) => {
       return res.status(400).json({ error: "UID is required" });
     }
 
-    const apiUrl = `https://fflikem-dun.vercel.app/like?uid=${uid}&server_name=bd`;
+    const apiUrl = `https://madara-like.vercel.app/like?uid=${uid}&server_name=bd`;
 
     const response = await fetch(apiUrl);
     const text = await response.text();
